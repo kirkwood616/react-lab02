@@ -6,10 +6,7 @@ import PostForm from "./PostForm";
 import { useState } from "react";
 
 function SocialPosts() {
-  const [posts, setPosts] = useState<Post[]>([
-    { title: "Poop", thought: "Poop is brown." },
-    { title: "Pee", thought: "Pee is dark, DARK Yellow" },
-  ]);
+  const [posts, setPosts] = useState<Post[]>([]);
   const [isClosed, setIsClosed] = useState<Boolean>(true);
 
   function handleFormSubmit(post: Post): void {
