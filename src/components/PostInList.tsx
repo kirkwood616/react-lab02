@@ -1,6 +1,6 @@
 import React from "react";
 import Post from "./Interface/PostInterface";
-import trash from "./trash-solid.svg";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 interface Props {
   post: Post;
@@ -15,8 +15,7 @@ function PostInList({ post, onDelete }: Props) {
         <p>{post.thought}</p>
       </section>
       <section className="deleteContainer">
-        {/* <FontAwesomeIcon icon="fa-solid fa-trash" /> */}
-        <img src={trash} alt="trash can icon" height={25} onClick={onDelete} />
+        <DeleteIcon style={{ fontSize: "35px" }} onClick={onDelete} />
       </section>
     </div>
   );

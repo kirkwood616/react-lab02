@@ -2,7 +2,7 @@ import React from "react";
 import "./PostForm.css";
 import { useState, FormEvent } from "react";
 import Post from "./Interface/PostInterface";
-import cancel from "./cancel_black_24dp.svg";
+import CancelIcon from "@mui/icons-material/Cancel";
 
 interface Props {
   close: Boolean;
@@ -32,10 +32,7 @@ function PostForm({ close, onClose, onSubmit }: Props) {
   return (
     <div className={`PostWindow ${addClass}`} onSubmit={handleFormSubmit}>
       <div className="PostForm">
-        <button className="x" onClick={onClose}>
-          ✖︎
-        </button>
-        {cancel}
+        <CancelIcon className="x" onClick={onClose} />
         <form>
           <p>
             <label htmlFor="title">Title</label>
