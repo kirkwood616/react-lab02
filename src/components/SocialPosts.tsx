@@ -22,18 +22,27 @@ function SocialPosts() {
   }
 
   return (
-    <div className="container">
+    <div className="containerMain">
       <div className="SocialPosts">
         <h1>My Thoughts</h1>
         <button onClick={() => setIsClosed(false)}>New Thought</button>
         <div className="postList">
-          {posts.map((post, i) => (
-            <PostInList
-              key={i}
-              post={post}
-              onDelete={() => handleDeletePost(i)}
-            />
-          ))}
+          {posts.length ? (
+            <div className="postContainer">
+              {posts.map((post, i) => (
+                <PostInList
+                  key={i}
+                  post={post}
+                  onDelete={() => handleDeletePost(i)}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="noThoughts">
+              <h2>No Thoughts</h2>
+              <p>Click "New Thought" Button To Add A Thought</p>
+            </div>
+          )}
         </div>
       </div>
       <PostForm

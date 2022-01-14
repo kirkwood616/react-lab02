@@ -6,23 +6,40 @@
   font-size: 3rem;
 }
 
+.SocialPosts h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
 .postList {
   background-color: white;
   border: 1px solid black;
   border-radius: 5px;
   margin: 21px 0;
-  padding: 25px 15px;
-  min-height: 250px;
+  padding: 35px 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.postContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thoughtContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .PostInList {
   border-bottom: 1px solid #f3f1f7;
-  width: 85%;
-  height: fit-content;
-  margin-bottom: 10px;
+  width: 100%;
   text-align: start;
   display: flex;
   flex-wrap: nowrap;
@@ -48,12 +65,17 @@
   font-size: 2rem;
 }
 
+.SocialPosts button:hover {
+  background-color: #79c5e8;
+  cursor: pointer;
+}
+
 .SocialPosts {
   width: 50%;
   text-align: center;
 }
 
-.container {
+.containerMain {
   display: flex;
   justify-content: center;
 }
@@ -66,10 +88,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 5px 0;
 }

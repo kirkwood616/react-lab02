@@ -10,7 +10,7 @@ interface Props {
 function PostInList({ post, onDelete }: Props) {
   return (
     <div className="PostInList">
-      <section className="postContainer">
+      <section className="thoughtContainer">
         <h2>{post.title}</h2>
         <p>{post.thought}</p>
       </section>
