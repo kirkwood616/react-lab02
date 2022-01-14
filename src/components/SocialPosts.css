@@ -1,0 +1,44 @@
+.SocialPosts h1 {
+  color: #03a9f4;
+  font-family: "Homemade Apple", cursive;
+  font-size: 3rem;
+}
+
+.postList {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 21px 0;
+}
+
+.SocialPosts button {
+  background-color: #03a9f4;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.SocialPosts {
+  width: 50%;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.PostWindow {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
