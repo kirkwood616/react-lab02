@@ -17,6 +17,10 @@ function SocialPosts() {
     setIsClosed(true);
   }
 
+  function handleDeletePost(index: number) {
+    setPosts((prev) => [...prev.slice(0, index), ...prev.slice(index + 1)]);
+  }
+
   return (
     <div className="container">
       <div className="SocialPosts">
@@ -24,7 +28,11 @@ function SocialPosts() {
         <button onClick={() => setIsClosed(false)}>New Thought</button>
         <div className="postList">
           {posts.map((post, i) => (
-            <PostInList key={i} post={post} />
+            <PostInList
+              key={i}
+              post={post}
+              onDelete={() => handleDeletePost(i)}
+            />
           ))}
         </div>
       </div>
