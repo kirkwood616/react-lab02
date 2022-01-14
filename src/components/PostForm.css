@@ -20,6 +20,10 @@
   width: 100%;
 }
 
+.PostForm button:hover {
+  cursor: pointer;
+}
+
 .PostForm input[type="text"] {
   font-family: "Dosis", sans-serif;
   font-size: 1rem;
