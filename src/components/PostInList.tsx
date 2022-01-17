@@ -15,7 +15,11 @@ function PostInList({ post, onDelete }: Props) {
         <p>{post.thought}</p>
       </section>
       <section className="deleteContainer">
-        <DeleteIcon style={{ fontSize: "35px" }} onClick={onDelete} />
+        <DeleteIcon
+          className="deleteIcon"
+          style={{ fontSize: "35px" }}
+          onClick={onDelete}
+        />
       </section>
     </div>
   );

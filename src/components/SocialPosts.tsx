@@ -18,7 +18,13 @@ function SocialPosts() {
   }
 
   function handleDeletePost(index: number) {
-    setPosts((prev) => [...prev.slice(0, index), ...prev.slice(index + 1)]);
+    let text = "Are you sure you want to delete this thought?";
+    // eslint-disable-next-line no-restricted-globals
+    if (confirm(text) === true) {
+      setPosts((prev) => [...prev.slice(0, index), ...prev.slice(index + 1)]);
+    } else {
+      return;
+    }
   }
 
   return (

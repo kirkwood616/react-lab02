@@ -53,6 +53,10 @@
   margin-left: 25px;
 }
 
+.deleteIcon {
+  cursor: pointer;
+}
+
 .SocialPosts button {
   background-color: #03a9f4;
   border: 1px solid black;
