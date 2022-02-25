@@ -93,3 +93,22 @@
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 768px) {
+  .SocialPosts {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .SocialPosts {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .SocialPosts h1 {
+    font-size: 2rem;
+  }
+}
